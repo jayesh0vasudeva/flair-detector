@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Identify the correct flair</title>
+  <head>
+    <link href="/static/styles.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <font size="+2"><p class="success-message"> Detected flair! <br><br><br>
+         Result of the <a href="{{ link }}"> URL </a>  is:<br></font><br>
+    	<b><font size="+5">{{ predictions }}</b></font></p>
+    	<ul><font size="+5"><a href ="{{url_for('home')}}">home</a></font></ul>
+      </div>
+    </body>
+</html>
