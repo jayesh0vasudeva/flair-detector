@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"reddit_flair_data.posts"}],"uuid":"b5d8665c1de64411bd95fe4d4689b4ba"}
