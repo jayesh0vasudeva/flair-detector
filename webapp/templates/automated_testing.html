@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<title>endpoint</title>
+	<head>
+		<link href="../static/main.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h2> upload the endpoint text file</h2>
+			<form action="{{url_for('automated_testing')}}" method="POST" enctype='multipart/form-data'>
+				<div class="form-group">
+				  <label>Select a file:</label>
+				  	<div class="custom-file">
+						  <input type="file" class="custom-file-id" id="file" name="file"><br><br>
+						  <label class="custom-file-bale" for="file">select file.....</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Upload</button>
+			<h4>{{ content }}</h4>
+			</form>
+		</div>
+	</body>
+</html>
