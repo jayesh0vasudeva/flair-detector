@@ -11,17 +11,6 @@ The application can be found live at [Reddit Flair Detector](https://shekapp.her
 6. [WebApp](#webapp)
 7. [Data Analysis](#data-analysis)
 8. [References](#references)
-## Directory Structure
-
-The directory is a ***Flask*** web application set-up for hosting on *Heroku* servers. The description of files and folders can be found below:
-
-  1. [requirements.txt](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/blob/master/requirements.txt) - Containing all Python dependencies of the project.
-  2. [reddit-india-data.csv](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/blob/master/reddit-india-data.csv) - CSV file of the data extracted 
-  3. [data ananlysis](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/data%20analysis) - Folder containing Graphs that analyse the given data and the jupyter notebook used to perform the same 
-  4. [Webapp](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/webapp) - Folder containing the main application which loads the Machine Learning models and renders the results on the web application.
-  5. [data](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/data/reddit_flair_data) - Folder containing CSV,JSON and MongoDB instances of the collected data.
-  6. [Model](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/Model) - Folder containing the saved model.
-  7. [Jupyter Notebooks](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/Jupyter%20Notebooks) - Folder containing Jupyter Notebooks to collect Reddit India data and train Machine Learning models. Notebooks can be opened in [Colaboratory](https://colab.research.google.com/) by Google.
   
 ### Codebase
 
@@ -38,13 +27,6 @@ This project requires **Python 3** and the following Python libraries installed(
 - [pandas](pandas.pydata.org/)
 - [Numpy](http://numpy.org/)
 - [Matplotlib](https://matplotlib.org/) 
-
-Clone the repo
-
-```bash
-https://github.com/abhishekchopra0907/Reddit-Flair-Detector
-cd Reddit-Flair-Detection/
-```
 
 ## Project Execution
 
@@ -164,14 +146,11 @@ In order to further increase my accuracy I decided to also process the top comme
 As you can see the results were much better now and **randomforest** gave me the best accuracy 
 So i pickled the randomforest model and used it further on my webapp
 ## WebApp
-The best model - random forest is deployed as a web app. Check the live demo [here](https://shekapp.herokuapp.com). All the required files can be found [here](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/webapp)
-### DEMO
-![Home Page](https://i.imgur.com/frVXUYL.png)
-![Result Page](https://i.imgur.com/JyZdH3P.png)
+The best model - random forest is deployed as a web app. Check the live demo [here](https://shrouded-journey-09442.herokuapp.com/). All the required files can be found [here](https://github.com/jayesh0vasudeva/flair-detector/tree/master/webapp)
 ## Data Analysis
 I performed data analysis on the data that I scraped , but due to some error wasnt able to deploy that as a page on my web app 
 
-**But I have included the code and the result of the same in the [Data analysis folder](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/data%20analysis)**
+**But I have included the code and the result of the same in the [Data analysis folder](https://github.com/jayesh0vasudeva/flair-detector/tree/master/data%20analysis)**
 
 ![Imgur](https://i.imgur.com/1U2jEK6.png)
 
@@ -185,3 +164,4 @@ I performed data analysis on the data that I scraped , but due to some error was
 * [Scrapping Reddit](https://towardsdatascience.com/scraping-reddit-data-1c0af3040768)
 * [Multi-Class Text Classification Model Comparison and Selection](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568)
 * [MongoDB](https://docs.mongodb.com/manual/reference/program/mongodump/)
+* [AWD LSTM](https://yashuseth.blog/2018/09/12/awd-lstm-explanation-understanding-language-model/)
